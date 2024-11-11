@@ -50,7 +50,7 @@ Once the development server is running, you can open your browser and navigate t
 
 ## Acknowledgements 🙏
 
-- Inspired by the YouTube video tutorial by <a href="https://www.linkedin.com/in/yoshita-jain-510893148/">Yoshita Jain</a> Choudhary. Check out the tutorial <a href="https://youtu.be/D_tyfqNZm6I?si=FI1J_Y_cExXa73JR">here</a>.
+- Inspired by the YouTube video tutorial by <a href="https://www.linkedin.com/in/yoshita-jain-510893148/">Yoshita Jain</a>. Check out the tutorial <a href="https://youtu.be/D_tyfqNZm6I?si=FI1J_Y_cExXa73JR">here</a>.
 
 ![alt text](image.png)
 
