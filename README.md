@@ -10,9 +10,8 @@ Welcome to the Tic Tac Toe game! This project is a simple implementation of the 
 - 📱 **Responsive Design**: The game is fully responsive and works well on all screen sizes.
 
 ## Screenshots 📸
-![alt text](image-1.png)
 
-![alt text](image-2.png)
+<div align="center"> <img src="image-1.png" alt="Screenshot 1" width="900"> </div> <div align="center"> <img src="image-2.png" alt="Screenshot 2" width="400"> </div>
 
 ## Installation 💻
 Follow these steps to get the project up and running on your local machine:
