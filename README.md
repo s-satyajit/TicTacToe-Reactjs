@@ -11,7 +11,7 @@ Welcome to the Tic Tac Toe game! This project is a simple implementation of the 
 
 ## Screenshots 📸
 
-<div align="center"> <img src="image-1.png" alt="Screenshot 1" width="900"> </div> <div align="center"> <img src="image-2.png" alt="Screenshot 2" width="400"> </div>
+<div align="center"> <img src="./src/assets/image-1.png" alt="Screenshot 1" width="900"> </div> <div align="center"> <img src="./src/assets/image-2.png" alt="Screenshot 2" width="400"> </div>
 
 ## Installation 💻
 Follow these steps to get the project up and running on your local machine:
@@ -52,7 +52,7 @@ Once the development server is running, you can open your browser and navigate t
 
 - Inspired by the YouTube video tutorial by <a href="https://www.linkedin.com/in/yoshita-jain-510893148/">Yoshita Jain</a>. Check out the tutorial <a href="https://youtu.be/D_tyfqNZm6I?si=FI1J_Y_cExXa73JR">here</a>.
 
-![alt text](image.png)
+![alt text](./src/assets/image.png)
 
 ## Contributing 🤝
 If you'd like to contribute to this project, please follow these steps:
