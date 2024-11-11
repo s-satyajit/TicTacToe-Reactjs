@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 function TicTacToe() {
     const [board, setBoard] = useState(Array(9).fill(null))
@@ -7,7 +7,12 @@ function TicTacToe() {
 
     const renderSquare = (index) => {
         return(
-            <button onClick={() => handleClick(index)}>{board[index]}</button>
+            <button 
+            onClick={() => handleClick(index)}
+            className="w-20 h-20 bg-blue-100 border-2 border-blue-500 text-3xl text-black font-bold flex items-center justify-center"
+            >
+                {board[index]}
+            </button>
         )
     }
 
@@ -27,6 +32,7 @@ function TicTacToe() {
     const handleReset = () => {
         setBoard(Array(9).fill(null))
         setWinner(null)
+        setIsXTurn(true)
     }
 
     const checkWinner = (newBoard) => {
@@ -50,29 +56,36 @@ function TicTacToe() {
 
     }
 
-
- 
     return(
         <>
-        <div>
-            <div className="board-row">
-                {renderSquare(0)}
-                {renderSquare(1)}
-                {renderSquare(2)}
+        <h1 className="text-4xl font-extrabold text-center my-6">Let's Play Tic Tac Toe</h1>
+        <div className="flex flex-col items-center space-y-4">
+
+            <div className="flex flex-col items-center">
+                <div className="flex" >
+                    {renderSquare(0)}
+                    {renderSquare(1)}
+                    {renderSquare(2)}
+                </div>
+                <div className="flex">
+                    {renderSquare(3)}
+                    {renderSquare(4)}
+                    {renderSquare(5)}
+                </div>
+                <div className="flex">
+                    {renderSquare(6)}
+                    {renderSquare(7)}
+                    {renderSquare(8)}
+                </div>
             </div>
-            <div className="board-row">
-                {renderSquare(3)}
-                {renderSquare(4)}
-                {renderSquare(5)}
-            </div>
-            <div className="board-row">
-                {renderSquare(6)}
-                {renderSquare(7)}
-                {renderSquare(8)}
-            </div>
+            <button 
+                onClick={handleReset} 
+                className="mt-4 text-white font-bold rounded hover:bg-red-700 transition duration-400" 
+                >
+                    Reset Game
+                </button>
+            {winner && <div className="flex-col  items-center justify-center font-bold text-2xl my-4 py-2 px-4 bg-green-700 rounded-xl shadow-lg max-w-xs">{winner} is the winner!</div>}
         </div>
-        <button onClick={handleReset}>Reset</button>
-        {winner && <div>{winner} is the winner!</div>}
         </>
     )
 }
